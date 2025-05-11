@@ -19,4 +19,8 @@ let appendArray =[]
     }
 }) 
 
-console.log(arr3);
+// console.log(arr3);
+
+// let a = [10, 20, 20, 30, 40, 50, 50];
+
+
