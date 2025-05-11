@@ -16,6 +16,13 @@ let jsonArrayDatas = [
         "ComapnyName": "GeeksforGeeks",
         "Location": "Noida"
     },
+    
+    {
+        "ComapnyName": "GeeksforGeeks",
+        "Location": "Noida"
+    },
+    
+    
     {
         "topics":
             [
@@ -30,6 +37,6 @@ let jsonArrayDatas = [
 
 // console.log(jsonArrayDatas[0]["Location"]);
 
-for (let element of jsonArrayData) {
-    console.log(element["ComapnyName"]);
+for (let element in jsonArrayDatas) {
+    console.log(element);
 }
