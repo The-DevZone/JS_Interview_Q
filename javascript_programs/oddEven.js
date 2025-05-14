@@ -22,6 +22,7 @@ console.log(checkOddOrEven(14));
 console.log(checkOddOrEven(17));
 
 let num = 4;
+
 if (num % 2 === 0) {
     console.log("The number is even.");
 } else {
