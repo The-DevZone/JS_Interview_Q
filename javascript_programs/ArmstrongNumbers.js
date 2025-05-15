@@ -32,3 +32,15 @@ function isArmstrong(number) {
 
 isArmstrong(9474);
 isArmstrong(520);
+
+
+const areaTringle = (base ,height) => {
+    return 0.5 * base * height
+}
+
+let baseLength = 50;
+let heightLength = 5;
+
+let tringle = areaTringle(baseLength , heightLength);
+console.log("this is a area of tringle" + tringle);
+ 
