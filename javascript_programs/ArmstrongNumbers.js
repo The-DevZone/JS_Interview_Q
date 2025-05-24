@@ -55,3 +55,15 @@ function findLargest(n1, n2, n3){
 }
 
 console.log(findLargest(10, 20, 50))
+
+let min = 10;
+let max = 20;
+let count = 5; 
+let random = [];
+
+for (let i = 0; i < count; i++) {
+    let n = Math.floor(Math.random() * (max - min + 1)) + min;
+    random.push(n);
+}
+
+console.log(`Random numbers between ${min} and ${max}:`, random);
