@@ -15,7 +15,7 @@ function lastElement(arr){
     return arr[arr.length - 1];
 }
 
-console.log(lastElement([1, 2, 3, 4, 5,10, 20, 30, 40, 50])); // Output: 50
+// console.log(lastElement([1, 2, 3, 4, 5,10, 20, 30, 40, 50])); // Output: 50
 
 
 // solve -2
@@ -25,5 +25,18 @@ function combination(arr1 ,arr2){
 
 let arr1 = [1, 2, 3];
 let arr2 = [4, 5, 6];
-console.log(combination(arr1, arr2)); // Output: [1, 2, 3, 4, 5, 6]
+let arr3 = []
+// console.log(combination(arr1, arr2)); // Output: [1, 2, 3, 4, 5, 6]
 
+for(let i = 0 ; i <arr1.length; i++){
+    arr3.push(arr1[i])
+    // console.log(arr3); 
+    
+}
+for(let i = 0 ; i <arr2.length; i++){
+    arr3.push(arr2[i])
+    // console.log(arr3); 
+
+}
+
+console.log(arr3); 
