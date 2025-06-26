@@ -90,3 +90,5 @@ const isElementPresent = (array, element) => set.has(element);
 // Usage examples
 console.log(isElementPresent(arr5, 3)); // true
 console.log(isElementPresent(arr5, 8)); // false
+
+
