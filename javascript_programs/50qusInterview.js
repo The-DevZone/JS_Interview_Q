@@ -16,3 +16,14 @@ function lastElement(arr){
 }
 
 console.log(lastElement([1, 2, 3, 4, 5,10, 20, 30, 40, 50])); // Output: 50
+
+
+// solve -2
+function combination(arr1 ,arr2){
+    return [...arr1, ...arr2];
+}
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+console.log(combination(arr1, arr2)); // Output: [1, 2, 3, 4, 5, 6]
+
