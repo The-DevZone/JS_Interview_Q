@@ -148,3 +148,26 @@ const users = [
 const filterMale = users.filter(user => user.gender === "Male")
 
 console.log(filterMale); 
+
+
+// 8. Given an array of strings, return a new array where all strings are in uppercase.  
+const strings = ["hello", "world", "javascript", "is", "awesome"];
+const upperCaseStrings = strings.map(string => string.toUpperCase());
+console.log(upperCaseStrings); 
+// 9. Check if an object is empty (has no keys).  
+const obj = {};
+console.log(Object.keys(obj).length === 0); 
+
+// 10. Create an array of numbers and double each value using .map().  
+
+const numbers = [1, 2, 3, 4, 5];
+
+const double = numbers.map(item => item * 2)
+
+console.log(double)
+// 11. Convert an array of strings into a single comma-separated string.  
+// 12. Write a function to flatten a nested array (one level deep). (e.g., [1, [2, 3], 4] → [1, 2, 3, 4])  
+// 13. Write a function that checks if all elements in an array are numbers.  
+// 14. Build a simple isPrime() function to check if a number is prime.  
+// 15. Create a function that removes duplicate values from an array.  
+
