@@ -1,12 +1,9 @@
-// 1. Create a function that returns the last element of an array.
-// 2. Find the combination of two arrays.
-// 3. Generate a random integer between 0 to 18.
-// 4. Create a function that takes an array containing both numbers and strings, and returns a new array containing only the string values.
 // 5. Find the maximum number in an array.
 // 6. Write a function that returns the length of a given object (number of keys).
 // 7. In an array of objects filter out those objects which have gender's value male.
 
 
+// 1. Create a function that returns the last element of an array.
 // solve-1 /
 function lastElement(arr){
     if(arr.length === 0) {
@@ -18,6 +15,7 @@ function lastElement(arr){
 // console.log(lastElement([1, 2, 3, 4, 5,10, 20, 30, 40, 50])); // Output: 50
 
 
+// 2. Find the combination of two arrays.
 // solve -2
 function combination(arr1 ,arr2){
     return [...arr1, ...arr2];
@@ -36,7 +34,28 @@ for(let i = 0 ; i <arr1.length; i++){
 for(let i = 0 ; i <arr2.length; i++){
     arr3.push(arr2[i])
     // console.log(arr3); 
-
+    
 }
 
 console.log(arr3); 
+
+
+// 3. Generate a random integer between 0 to 18.
+function randomInteger() {
+    return Math.floor(Math.random() * 19);
+    
+}
+
+console.log(randomInteger())
+
+
+
+// 4. Create a function that takes an array containing both numbers and strings, and returns a new array containing only the string values.
+
+const filterStrings = (arr) => {
+    return arr.filter(item => typeof item === 'string');
+}
+
+
+console.log(filterStrings([1, 'apple', 2, 'banana', 3, 'cherry'])); 
+
