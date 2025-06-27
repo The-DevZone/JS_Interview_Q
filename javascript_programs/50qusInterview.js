@@ -1,4 +1,3 @@
-// 6. Write a function that returns the length of a given object (number of keys).
 // 7. In an array of objects filter out those objects which have gender's value male.
 
 
@@ -91,4 +90,15 @@ const findMax = (arr) => {
 }
 
 console.log(findMax([ 5 , 10 , 50 , 50 , 50 , 60])); // Output: null
+
+
+// 6. Write a function that returns the length of a given object (number of keys).
+
+const objectLength = (obj) =>{
+    if(typeof obj !== 'object' || obj === null) {
+        return 0;
+    }
+    return Object.keys(obj).length;
+}
+console.log(objectLength({name: 'John', age: 30, city: 'New York'})); // Output: 3
 
