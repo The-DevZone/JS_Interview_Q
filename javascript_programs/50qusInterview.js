@@ -1,4 +1,3 @@
-// 7. In an array of objects filter out those objects which have gender's value male.
 
 
 // 1. Create a function that returns the last element of an array.
@@ -102,3 +101,50 @@ const objectLength = (obj) =>{
 }
 console.log(objectLength({name: 'John', age: 30, city: 'New York'})); // Output: 3
 
+
+// 7. In an array of objects filter out those objects which have gender's value male.
+
+
+const users = [
+    {
+        name: "Rohit Verma",
+        age: 25,
+        gender: "Male",
+        city: "Delhi",
+        title: "Frontend Developer"
+    },
+    {
+        name: "Monika Choudhery",
+        age: 24,
+        gender: "Female",
+        city: "Jaipur",
+        title: "Web Developer"
+    },
+    {
+        name: "Ankit Sharma",
+        age: 30,
+        gender: "Male",
+        city: "Mumbai",
+        title: "Backend Developer"
+    },
+    {
+        name: "Neha Singh",
+        age: 27,
+        gender: "Female",
+        city: "Lucknow",
+        title: "UI/UX Designer"
+    },
+    {
+        name: "Sahil Mehra",
+        age: 29,
+        gender: "Male",
+        city: "Chandigarh",
+        title: "Full Stack Developer"
+    }
+];
+
+
+
+const filterMale = users.filter(user => user.gender === "Male")
+
+console.log(filterMale); 
