@@ -1,4 +1,3 @@
-// 5. Find the maximum number in an array.
 // 6. Write a function that returns the length of a given object (number of keys).
 // 7. In an array of objects filter out those objects which have gender's value male.
 
@@ -58,4 +57,38 @@ const filterStrings = (arr) => {
 
 
 console.log(filterStrings([1, 'apple', 2, 'banana', 3, 'cherry'])); 
+
+
+
+const contianArray = (arrayValue) => {
+    let newArray =[]
+    for(let i = 0 ; i < arrayValue.length; i++){
+        //  console.log(arrayValue[i])
+        if(typeof arrayValue[i] === "number"){
+            console.log("enter hua ha");
+            newArray.push(arrayValue[i])
+        }
+    }
+    return newArray
+}
+
+let arr = [10 ,20,30, "R" , "O" , "H"];
+console.log(contianArray(arr))
+
+// 5. Find the maximum number in an array.
+
+const findMax = (arr) => {
+    if (arr.length === 0) {
+        return null;
+    }
+    let max = arr[0];
+    arr.forEach(num => {
+        if(num > max){
+            max = num;
+        }
+    })
+    return max;
+}
+
+console.log(findMax([ 5 , 10 , 50 , 50 , 50 , 60])); // Output: null
 
