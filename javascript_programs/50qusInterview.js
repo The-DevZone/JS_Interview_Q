@@ -165,9 +165,52 @@ const numbers = [1, 2, 3, 4, 5];
 const double = numbers.map(item => item * 2)
 
 console.log(double)
-// 11. Convert an array of strings into a single comma-separated string.  
-// 12. Write a function to flatten a nested array (one level deep). (e.g., [1, [2, 3], 4] → [1, 2, 3, 4])  
-// 13. Write a function that checks if all elements in an array are numbers.  
-// 14. Build a simple isPrime() function to check if a number is prime.  
-// 15. Create a function that removes duplicate values from an array.  
+
+
+// 11. Convert an array of strings into a single comma-separated string. 
+const stringArray = ["apple", "banana", "cherry"];
+const commaSeparatedString = stringArray.join();
+console.log(commaSeparatedString); 
+
+
+// 12. Write a function to flatten a nested array (one level deep). (e.g., [1, [2, 3], 4] → [1, 2, 3, 4]) 
+
+const flattenArray = (arr) => {
+    return arr.flat();
+}
+console.log(flattenArray([1, [2, 3], 4]));
+
+const deepArr = [1, [2, [3, [4, [5]]]]];
+console.log(deepArr.flat(Infinity))
+
+
+
+// 13. Write a function that checks if all elements in an array are numbers.
+const areAllNumbers = (arr) => {
+    return arr.every(item => typeof item === 'number');
+}  
+console.log(areAllNumbers([1, 2, 3, 4, "rohit", 5])); 
+
+
+
+// 14. Build a simple isPrime() function to check if a number is prime. 
+
+const isPrime = (num) => {
+    if(num <=1){
+        return false;
+    }
+    for(let i =2 ; i <=Math.sqrt(num); i++){
+        if(num % i === 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(isPrime(10))
+
+
+
+// 15. Create a function that removes duplicate values from an array. 
+ 
 
