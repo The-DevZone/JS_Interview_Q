@@ -234,6 +234,9 @@ console.log(removeDouble)
 
 // 16. What’s the difference between parseInt and Number()?
 
+console.log(   parseInt("10.922nm..sss")); 
+console.log(  Number("555.57lm,"))
+
 // 17. Why does 0.1 + 0.2 !== 0.3 in JavaScript?
 
 // 18. Explain floating-point precision issues in JavaScript.
