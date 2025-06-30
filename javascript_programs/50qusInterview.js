@@ -238,6 +238,8 @@ console.log(   parseInt("10.922nm..sss"));
 console.log(  Number("555.57lm,"))
 
 // 17. Why does 0.1 + 0.2 !== 0.3 in JavaScript?
+const sum = 0.1 + 0.2;
+console.log(sum);
 
 // 18. Explain floating-point precision issues in JavaScript.
 
