@@ -212,5 +212,40 @@ console.log(isPrime(10))
 
 
 // 15. Create a function that removes duplicate values from an array. 
+
+// 15. Create a function that removes duplicate values from an array. 
+
+
+const arrs = [10,20,30,40,50,10,20,10,20,10];
+
+const remo= new Set(arrs)
+const result = [...remo]
+console.log(result);
+
+ const removeDouble =  arrs.filter((item , index) => {
+    // console.log()
+    return  arrs.indexOf(item) === index
+    // console.log()
+})
+
+console.log(removeDouble)
+
+
+
+// 16. What’s the difference between parseInt and Number()?
+
+// 17. Why does 0.1 + 0.2 !== 0.3 in JavaScript?
+
+// 18. Explain floating-point precision issues in JavaScript.
+
+// 19. How would you handle high-precision decimal math in JS?
+
+// 20. What is the difference between slice and splice?
+
+// 21. Create a function that reverse each word of a given sentence. E.g., Mai hun manas → sanam nuh iam
+
+// 22. In an array of numbers and strings, only add those numbers which are not strings.
+
+// 23. How would you check if a number is an integer?
  
 
