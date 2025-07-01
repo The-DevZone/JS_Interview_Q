@@ -9,7 +9,7 @@ function lastElement(arr) {
     return arr[arr.length - 1];
 }
 
-// console.log(lastElement([1, 2, 3, 4, 5,10, 20, 30, 40, 50])); // Output: 50
+// console.log(lastElement([1, 2, 3, 4, 5, 10, 20, 30, 40, 50])); // Output: 50
 
 
 // 2. Find the combination of two arrays.
@@ -25,16 +25,16 @@ let arr3 = []
 
 for (let i = 0; i < arr1.length; i++) {
     arr3.push(arr1[i])
-    // console.log(arr3); 
+    // console.log(arr3);
 
 }
 for (let i = 0; i < arr2.length; i++) {
     arr3.push(arr2[i])
-    // console.log(arr3); 
+    // console.log(arr3);
 
 }
 
-console.log(arr3);
+// console.log(arr3);
 
 
 // 3. Generate a random integer between 0 to 18.
@@ -43,7 +43,7 @@ function randomInteger() {
 
 }
 
-console.log(randomInteger())
+// console.log(randomInteger())
 
 
 
@@ -54,16 +54,16 @@ const filterStrings = (arr) => {
 }
 
 
-console.log(filterStrings([1, 'apple', 2, 'banana', 3, 'cherry']));
+// console.log(filterStrings([1, 'apple', 2, 'banana', 3, 'cherry']));
 
 
 
 const contianArray = (arrayValue) => {
     let newArray = []
     for (let i = 0; i < arrayValue.length; i++) {
-        //  console.log(arrayValue[i])
+        console.log(arrayValue[i])
         if (typeof arrayValue[i] === "number") {
-            console.log("enter hua ha");
+            // console.log("enter hua ha");
             newArray.push(arrayValue[i])
         }
     }
@@ -71,7 +71,7 @@ const contianArray = (arrayValue) => {
 }
 
 let arr = [10, 20, 30, "R", "O", "H"];
-console.log(contianArray(arr))
+// console.log(contianArray(arr))
 
 // 5. Find the maximum number in an array.
 
@@ -88,7 +88,7 @@ const findMax = (arr) => {
     return max;
 }
 
-console.log(findMax([5, 10, 50, 50, 50, 60])); // Output: null
+// console.log(findMax([5, 10, 50, 50, 50, 60])); // Output: null
 
 
 // 6. Write a function that returns the length of a given object (number of keys).
@@ -99,7 +99,7 @@ const objectLength = (obj) => {
     }
     return Object.keys(obj).length;
 }
-console.log(objectLength({ name: 'John', age: 30, city: 'New York' })); // Output: 3
+// console.log(objectLength({ name: 'John', age: 30, city: 'New York' })); // Output: 3
 
 
 // 7. In an array of objects filter out those objects which have gender's value male.
@@ -143,20 +143,18 @@ const users = [
     }
 ];
 
-
-
 const filterMale = users.filter(user => user.gender === "Male")
 
-console.log(filterMale);
+// console.log(filterMale);
 
 
 // 8. Given an array of strings, return a new array where all strings are in uppercase.  
 const strings = ["hello", "world", "javascript", "is", "awesome"];
 const upperCaseStrings = strings.map(string => string.toUpperCase());
-console.log(upperCaseStrings);
+// console.log(upperCaseStrings);
 // 9. Check if an object is empty (has no keys).  
 const obj = {};
-console.log(Object.keys(obj).length === 0);
+// console.log(Object.keys(obj).length === 0);
 
 // 10. Create an array of numbers and double each value using .map().  
 
@@ -164,13 +162,13 @@ const numbers = [1, 2, 3, 4, 5];
 
 const double = numbers.map(item => item * 2)
 
-console.log(double)
+// console.log(double)
 
 
 // 11. Convert an array of strings into a single comma-separated string. 
 const stringArray = ["apple", "banana", "cherry"];
 const commaSeparatedString = stringArray.join();
-console.log(commaSeparatedString);
+// console.log(commaSeparatedString);
 
 
 // 12. Write a function to flatten a nested array (one level deep). (e.g., [1, [2, 3], 4] → [1, 2, 3, 4]) 
@@ -178,18 +176,19 @@ console.log(commaSeparatedString);
 const flattenArray = (arr) => {
     return arr.flat();
 }
-console.log(flattenArray([1, [2, 3], 4]));
+// console.log(flattenArray([1, [2, 3], 4]));
 
 const deepArr = [1, [2, [3, [4, [5]]]]];
-console.log(deepArr.flat(Infinity))
-
+// console.log(deepArr.flat(Infinity))
 
 
 // 13. Write a function that checks if all elements in an array are numbers.
+const bothValue = [10, 20, 30, 40]
 const areAllNumbers = (arr) => {
-    return arr.every(item => typeof item === 'number');
+    return bothValue.every(item => typeof item === 'number');
+
 }
-console.log(areAllNumbers([1, 2, 3, 4, "rohit", 5]));
+// console.log(areAllNumbers([1, 2, 3, 4, "rohit", 5]));
 
 
 
@@ -207,11 +206,10 @@ const isPrime = (num) => {
     return true;
 }
 
-console.log(isPrime(10))
+// console.log(isPrime(10))
 
 
 
-// 15. Create a function that removes duplicate values from an array. 
 
 // 15. Create a function that removes duplicate values from an array. 
 
@@ -220,7 +218,7 @@ const arrs = [10, 20, 30, 40, 50, 10, 20, 10, 20, 10];
 
 const remo = new Set(arrs)
 const result = [...remo]
-console.log(result);
+// console.log(result);
 
 const removeDouble = arrs.filter((item, index) => {
     // console.log()
@@ -228,24 +226,24 @@ const removeDouble = arrs.filter((item, index) => {
     // console.log()
 })
 
-console.log(removeDouble)
+// console.log(removeDouble)
 
 
 
 // 16. What’s the difference between parseInt and Number()?
 
-console.log(parseInt("10.922nm..sss"));
-console.log(Number("555.57lm,"))
+// console.log(parseInt("10.922nm..sss"));
+// console.log(Number("555.57lm,"))
 
 // 17. Why does 0.1 + 0.2 !== 0.3 in JavaScript?
 const sum = 0.1 + 0.2;
-console.log(sum);
+// console.log(sum);
 
 // 18. Explain floating-point precision issues in JavaScript.
 const num1 = 0.1;
 const num2 = 0.2;
 const addFloatNUm = num1 + num2;
-console.log(addFloatNUm);
+// console.log(addFloatNUm);
 
 // 19. How would you handle high-precision decimal math in JS?
 const highPrecisionMath = (num1, num2) => {
@@ -254,13 +252,29 @@ const highPrecisionMath = (num1, num2) => {
 // 20. What is the difference between slice and splice?
 const arrData = [1, 2, 3, 4, 5];
 const slicedArray = arrData.slice(1, 3); // Returns a shallow copy of a portion of an array
-console.log(slicedArray);
+// console.log(slicedArray);
 const spllicedArray = arrData.splice(1, 2) // Changes the contents of an array by removing or replacing existing elements and/or adding new elements
-console.log(spllicedArray);
+// console.log(spllicedArray);
 // console.log(arrData); // Original array is modified
 
 // 21. Create a function that reverse each word of a given sentence. E.g., Mai hun manas → sanam nuh iam
 
+const reverseString = (word) => {
+    let reverseStr = ""
+    for (let i = word.length -1 ; i >= 0; i--) {
+        console.log(word[i])
+         reverseStr += word[i] 
+        }
+    return reverseStr
+}
+// string method using 
+const reverseStr = (word) => {
+    return word.split("").reverse().join("")
+
+}
+
+console.log(reverseString("Hello"))
+console.log(reverseStr("rohit"))
 // 22. In an array of numbers and strings, only add those numbers which are not strings.
 
 // 23. How would you check if a number is an integer?
