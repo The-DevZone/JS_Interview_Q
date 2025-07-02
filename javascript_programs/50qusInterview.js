@@ -290,11 +290,34 @@ const mixedArray = [10, "rohit", 20, "sumit", 30, "40", 50];
 let sumMixedArray = 0;
 
 mixedArray.forEach((item, index) => {
-        if(typeof item == "number"){
-            sumMixedArray += item; 
-        }
+    if (typeof item == "number") {
+        sumMixedArray += item;
+    }
 })
 
 console.log(sumMixedArray)
 
 // 23. How would you check if a number is an integer? 
+
+const integerNum = (num) => Number.isInteger(num)
+
+console.log(integerNum(320))
+
+
+// 24. Write a JavaScript function that reverse a number. 
+
+function reverseNumArray(arr) {
+    return arr.toString().split("").reverse().join("")
+}
+
+console.log(reverseNumArray( 55))
+
+
+
+// 25. Write a javascript function that returns a passed string with letters in alphabetical order.
+// 26. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+// 27. Write a javascript function to get the first element of an array. Passing a parameter ‘n’ will return the first ‘n’ elements of the array.
+// 28. Write a javascript function to get the number of occurrences of each letter in specified string.
+// 29. write a javascript program to find the most frequent item of an array.
+// 30. write a javascript program to shuffle an array.  
+
