@@ -261,10 +261,10 @@ const spllicedArray = arrData.splice(1, 2) // Changes the contents of an array b
 
 const reverseString = (word) => {
     let reverseStr = ""
-    for (let i = word.length -1 ; i >= 0; i--) {
+    for (let i = word.length - 1; i >= 0; i--) {
         console.log(word[i])
-         reverseStr += word[i] 
-        }
+        reverseStr += word[i]
+    }
     return reverseStr
 }
 // string method using 
@@ -273,8 +273,28 @@ const reverseStr = (word) => {
 
 }
 
-console.log(reverseString("Hello"))
-console.log(reverseStr("rohit"))
+// console.log(reverseString("Hello"))
+// console.log(reverseStr("rohit"))
+
+const arrNumStr = [10, 20, 30, 40, "rohit", "mohit", "kumar", "sumit"]
+
+// const numstrValue = arrNumStr.map((item) => {
+//     return item.toString().split("").reverse().join("")
+// })
+
+// console.log(numstrValue)
+
 // 22. In an array of numbers and strings, only add those numbers which are not strings.
 
-// 23. How would you check if a number is an integer?
+const mixedArray = [10, "rohit", 20, "sumit", 30, "40", 50];
+let sumMixedArray = 0;
+
+mixedArray.forEach((item, index) => {
+        if(typeof item == "number"){
+            sumMixedArray += item; 
+        }
+})
+
+console.log(sumMixedArray)
+
+// 23. How would you check if a number is an integer? 
