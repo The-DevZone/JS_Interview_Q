@@ -310,14 +310,23 @@ function reverseNumArray(arr) {
     return arr.toString().split("").reverse().join("")
 }
 
-console.log(reverseNumArray( 55))
+console.log(reverseNumArray(55))
 
 
 
 // 25. Write a javascript function that returns a passed string with letters in alphabetical order.
+
+const alphabetical = (str) => {
+    let convertNum = str.split("")
+    return convertNum.sort().join("")
+}
+
+console.log(alphabetical("efceds"))
+
 // 26. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+
 // 27. Write a javascript function to get the first element of an array. Passing a parameter ‘n’ will return the first ‘n’ elements of the array.
 // 28. Write a javascript function to get the number of occurrences of each letter in specified string.
 // 29. write a javascript program to find the most frequent item of an array.
-// 30. write a javascript program to shuffle an array.  
+// 30. write a javascript program to shuffle an array. 
 
