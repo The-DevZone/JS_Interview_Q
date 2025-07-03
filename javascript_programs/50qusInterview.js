@@ -321,9 +321,21 @@ const alphabetical = (str) => {
     return convertNum.sort().join("")
 }
 
-console.log(alphabetical("efceds"))
+// console.log(alphabetical("efceds"))
 
 // 26. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+
+// step- function 
+
+const firstLetterUpper = (str) => {
+
+    const upperCase = str.split("")
+    let newStr = upperCase[0].toUpperCase()
+    
+    // console.log(newStr)
+}
+
+console.log(firstLetterUpper("rohit"))
 
 // 27. Write a javascript function to get the first element of an array. Passing a parameter ‘n’ will return the first ‘n’ elements of the array.
 // 28. Write a javascript function to get the number of occurrences of each letter in specified string.
