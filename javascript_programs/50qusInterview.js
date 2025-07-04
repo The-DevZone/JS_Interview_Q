@@ -325,20 +325,19 @@ const alphabetical = (str) => {
 
 // 26. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
 
-// step- function 
-
 const firstLetterUpper = (str) => {
+    return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
 
-    const upperCase = str.split("")
-    let newStr = upperCase[0].toUpperCase()
-    
-    // console.log(newStr)
+    // console.log(news)
+    // .map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
 }
 
-console.log(firstLetterUpper("rohit"))
+console.log(firstLetterUpper(`rohit  verma  kumar  singh  sharma`));
 
 // 27. Write a javascript function to get the first element of an array. Passing a parameter ‘n’ will return the first ‘n’ elements of the array.
+
+
+
 // 28. Write a javascript function to get the number of occurrences of each letter in specified string.
 // 29. write a javascript program to find the most frequent item of an array.
 // 30. write a javascript program to shuffle an array. 
-
