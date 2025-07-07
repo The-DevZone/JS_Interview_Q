@@ -326,18 +326,59 @@ const alphabetical = (str) => {
 // 26. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
 
 const firstLetterUpper = (str) => {
-    return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
-
-    // console.log(news)
-    // .map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+    return str.split(" ").map(item => item.charAt(0).toUpperCase() + item.slice(1)).join(" ")
 }
 
 console.log(firstLetterUpper(`rohit  verma  kumar  singh  sharma`));
 
+
 // 27. Write a javascript function to get the first element of an array. Passing a parameter ‘n’ will return the first ‘n’ elements of the array.
 
+const firstElem = (arr, n) => {
+    if (!Array.isArray(arr) || arr.length === 0) {
+        return "Array is empty or not valid";
+    }
+
+    if (n === undefined) {
+        return arr[0]; // return only first element
+    }
+
+    return arr.slice(0, n); // return first n elements
+}
+
+const firstElement = [10, 20, 30, 40, 50, 60, 70];
+
+console.log(firstElem(firstElement));
+console.log(firstElem(firstElement, 3));
+console.log(firstElem([], 2));
 
 
 // 28. Write a javascript function to get the number of occurrences of each letter in specified string.
+
+const letterOccurrences = (strings) => {
+
+    const obj = {};
+
+    // const newObj = Object.entries(strings)
+
+    strings.split("").forEach(latter => {
+        if (obj.hasOwnProperty(latter)) {
+            console.log( obj[latter] = obj[latter] + 1 )
+        } else {
+            console.log(obj[latter] = 1)
+        }
+    })
+    const objEnteries = Object.entries(obj)
+    // console.log( objEnteries)
+    objEnteries.map(item => {
+        console.log(item)
+    })
+    
+}
+
+letterOccurrences("manash")
+
 // 29. write a javascript program to find the most frequent item of an array.
+
+
 // 30. write a javascript program to shuffle an array. 
