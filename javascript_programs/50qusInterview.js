@@ -363,7 +363,7 @@ const letterOccurrences = (strings) => {
 
     strings.split("").forEach(latter => {
         if (obj.hasOwnProperty(latter)) {
-            console.log( obj[latter] = obj[latter] + 1 )
+            console.log(obj[latter] = obj[latter] + 1)
         } else {
             console.log(obj[latter] = 1)
         }
@@ -373,7 +373,7 @@ const letterOccurrences = (strings) => {
     objEnteries.map(item => {
         console.log(item)
     })
-    
+
 }
 
 letterOccurrences("manash")
@@ -381,4 +381,40 @@ letterOccurrences("manash")
 // 29. write a javascript program to find the most frequent item of an array.
 
 
+
 // 30. write a javascript program to shuffle an array. 
+
+function shuffleArray(arr) {
+
+    const randomArr = Math.floor(Math.random() * arr.length)
+    // console.log(randomArr[])
+
+    for (let ind in arr) {
+        // console.log(arr[ind])
+        //  console.log([arr[ind] , arr[randomArr]] = [arr[randomArr] , arr[ind]]) 
+        let temp = arr[ind];
+        // arr[randomArr] = arr[ind]
+        arr[ind] = arr[randomArr];
+        arr[randomArr] = temp;
+
+        console.log(arr)
+        // arr.forEach(item => console.log(item))
+
+
+    }
+}
+
+shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+// Example:
+const resultt = shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+console.log("This is a " + resultt);
