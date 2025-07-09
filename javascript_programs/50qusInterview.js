@@ -60,7 +60,7 @@ const filterStrings = (arr) => {
 
 const contianArray = (arrayValue) => {
     let newArray = []
-    for (let i = 0; i < arrayValue.length; i++) {
+    for (let i = 0; i <arrayValue.length; i++) {
         console.log(arrayValue[i])
         if (typeof arrayValue[i] === "number") {
             // console.log("enter hua ha");
@@ -221,7 +221,6 @@ const result = [...remo]
 // console.log(result);
 
 const removeDouble = arrs.filter((item, index) => {
-    // console.log()
     return arrs.indexOf(item) === index
     // console.log()
 })
@@ -371,7 +370,7 @@ const letterOccurrences = (strings) => {
     const objEnteries = Object.entries(obj)
     // console.log( objEnteries)
     objEnteries.map(item => {
-        console.log(item)
+        // console.log(item)
     })
 
 }
@@ -384,27 +383,28 @@ letterOccurrences("manash")
 
 // 30. write a javascript program to shuffle an array. 
 
-function shuffleArray(arr) {
+function shuffleArrays(arr) {
 
+    // console.log(randomArr)
     const randomArr = Math.floor(Math.random() * arr.length)
-    // console.log(randomArr[])
 
     for (let ind in arr) {
+
         // console.log(arr[ind])
-        //  console.log([arr[ind] , arr[randomArr]] = [arr[randomArr] , arr[ind]]) 
-        let temp = arr[ind];
+        [arr[ind], arr[randomArr]] = [arr[randomArr], arr[ind]]
+        // let temp = arr[ind];
         // arr[randomArr] = arr[ind]
-        arr[ind] = arr[randomArr];
-        arr[randomArr] = temp;
+        // arr[ind] = arr[randomArr];
+        // arr[randomArr] = temp;
 
-        console.log(arr)
-        // arr.forEach(item => console.log(item))
-
-
+        // // arr.forEach(item => console.log(item))
+        
+        
     }
+    console.log(arr)
 }
 
-shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9])
+shuffleArrays([1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 
 function shuffleArray(arr) {
@@ -417,4 +417,5 @@ function shuffleArray(arr) {
 
 // Example:
 const resultt = shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-console.log("This is a " + resultt);
+// console.log("This is a " + resultt);
+
