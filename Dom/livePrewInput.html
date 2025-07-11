@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input live preview</title>
+  </head>
+  <body>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" />
+
+    <h3 class="display-name">Name preview</h3>
+    <h3 class="display-email">Email preview</h3>
+
+    <script>
+      let disName = document.getElementsByClassName("display-name");
+      let disEmail = document.getElementsByClassName("display-email");
+      let Namevlaue = document.querySelector("#name");
+      let emailValue = document.querySelector("#email");
+      Namevlaue.addEventListener("input", (e) => {
+        disName[0].innerText = e.target.value || "Name preview";
+      });
+
+      emailValue.addEventListener("input", (e) => {
+        disEmail[0].innerText = e.target.value || "Email preview";
+      });
+    </script>
+  </body>
+</html>
