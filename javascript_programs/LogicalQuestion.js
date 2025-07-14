@@ -67,3 +67,52 @@ function largestThreeNum(...largNum) {
     }
 }
 largestThreeNum(110, 2220, 80, 30, 5, 90)
+
+
+// How to iterate over a JavaScript object 
+
+function iterateObject() {
+    let exampleObj = {
+        book: "Sherlock Holmes",
+        author: "Arthur Conan Doyle",
+        genre: "Mystery"
+    };
+
+    for (let key in exampleObj) {
+        if (exampleObj.hasOwnProperty(key)) {
+            value = exampleObj[key];
+            console.log(key, value);
+        }
+    }
+}
+iterateObject();
+
+function iterateObject() {
+    let exampleObj = {
+        book: "Sherlock Holmes",
+        author: "Arthur Conan Doyle",
+        genre: "Mystery"
+    };
+
+    Object.entries(exampleObj).map(entry => {
+        let key = entry[0];
+        let value = entry[1];
+        console.log(key, value);
+    });
+}
+iterateObject();
+
+function iterateObject() {
+    let exampleObj = {
+        book: "Sherlock Holmes",
+        author: "Arthur Conan Doyle",
+        genre: "Mystery"
+    };
+
+    Object.keys(exampleObj).forEach(key => {
+        const value = exampleObj[key];
+        console.log(`${key}: ${value}`);
+    });
+
+}
+iterateObject();
