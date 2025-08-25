@@ -91,3 +91,55 @@ let capitalized = firstLetterCap
   .join(" ");
 
 console.log(capitalized); // "Hello World"
+
+
+
+// Group array of objects by property
+const people = [
+  { name: "Rohit", age: 25 },
+  { name: "Monika", age: 22 },
+  { name: "Aman", age: 25 },
+  { name: "Sneha", age: 22 }
+];
+
+const grouped = people.reduce((acc, person) => {
+  if (!acc[person.age]) {
+    acc[person.age] = [];
+  }
+  acc[person.age].push(person);
+  return acc;
+}, {});
+
+console.log(grouped);
+
+
+//  Question 4: Find intersection of two arrays
+
+const arr1 = [1, 2, 3, 4];
+const arr2 = [3, 4, 5, 6];
+
+const intersection = arr.filter(value => arr2.includes(value));
+
+console.log(intersection); 
+
+// Question 3: Find the second largest number
+const arr4 = [12, 35, 1, 10, 34, 1];
+const uniqueArr = [...new Set(arr4)]; 
+uniqueArr.sort((a, b) => b - a); 
+console.log(uniqueArr[1]);
+
+
+const flatArr= [1, [2, [3, [4]], 5]];
+// const flatValue = [1, [2, [3, [4]], 5]];
+const flatValue = flatArr.flat(Infinity);
+console.log(flatArr);
+
+// Question 1: Count frequency of each element\
+const arr5 = ["apple", "banana", "apple", "orange", "banana", "apple"];
+
+const frequency = arr5.reduce((acc, item) => {
+  acc[item] = (acc[item] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(frequency);
