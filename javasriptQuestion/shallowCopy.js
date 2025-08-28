@@ -7,6 +7,7 @@ let original = {
 
 
 let copy = { ...original };
+console.log(copy)
 
 // Change nested value
 copy.address.city = "Mumbai";
@@ -23,6 +24,7 @@ let ori = {
   name: "Rohit",
   address: "delhi"
 };
+
 let copy = ori
 console.log(copy)
 copy.name = "pooja"

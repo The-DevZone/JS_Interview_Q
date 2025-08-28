@@ -72,4 +72,7 @@ function removeFromCart(productId) {
     updateCart();
 }
 
-updateCart(); // Initial load of cart
+updateCart();
+
+const 
+// Initial load of cart

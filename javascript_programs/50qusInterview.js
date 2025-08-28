@@ -419,3 +419,58 @@ function shuffleArray(arr) {
 const resultt = shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 // console.log("This is a " + resultt);
 
+
+// JavaScript - Modify Object's Property in an Array of Objects
+
+let a = [
+    { name: "Sourav", age: 23 },
+    { name: "Ajay", age: 25 }
+];
+
+let updatedArr = a.map(item => {
+    if (item.name === "Ajay") {
+        item.age = 26;
+    }
+    return item;
+});
+
+console.log(updatedArr);
+
+
+let b = [
+    { name: "Sourav", age: 23 },
+    { name: "Ajay", age: 25 }
+];
+
+for (let i = 0; i < b.length; i++) {
+    if (b[i].name === "Ajay") {
+        b[i].age = 26; 
+    }
+}
+
+console.log(b);
+
+let c = [
+    { name: "Sourav", age: 23 },
+    { name: "Ajay", age: 25 }
+];
+
+c.forEach(item => {
+    if (item.name === "Sourav") {
+        item.age = 24;
+    }
+});
+
+console.log(c);
+
+let d = [
+    { name: "Sourav", age: 23 },
+    { name: "Ajay", age: 25 }
+];
+
+let object = d.find(item => item.name === "Sourav");
+if (object) {
+    object.age = 24; 
+}
+
+console.log(d);

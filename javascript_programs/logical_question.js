@@ -123,10 +123,22 @@ const intersection = arr.filter(value => arr2.includes(value));
 console.log(intersection); 
 
 // Question 3: Find the second largest number
-const arr4 = [12, 35, 1, 10, 34, 1];
-const uniqueArr = [...new Set(arr4)]; 
-uniqueArr.sort((a, b) => b - a); 
-console.log(uniqueArr[1]);
+// const arr4 = [12, 35, 1, 10, 34, 1];
+// const uniqueArr = [...new Set(arr4)]; 
+// uniqueArr.sort((a, b) => b - a); 
+// console.log(uniqueArr[1]);
+
+const arr5 = [1, 2, 2, 3, 4, 4, 5];
+const unique = [];
+
+for (let num of arr5) {
+  if (!unique.includes(num)) {
+    unique.push(num);
+  }
+}
+
+console.log(unique); // [1, 2, 3, 4, 5]
+
 
 
 const flatArr= [1, [2, [3, [4]], 5]];
